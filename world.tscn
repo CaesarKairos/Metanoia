@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://2s00uxt767gh"]
+
+[ext_resource type="PackedScene" uid="uid://c1e12rhtgn7hb" path="res://world/world_generator.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bchpf1xxa248h" path="res://entities/player/Player.tscn" id="2_tlwt5"]
+
+[node name="world" type="Node2D" unique_id=1625716084]
+
+[node name="Player" parent="." unique_id=999658134 instance=ExtResource("2_tlwt5")]
+position = Vector2(150, -150)
+START_SPEED = 150.0
+MAX_SPEED = 400.0
+ACCELERATION = 15.0
+JUMP_VELOCITY = -380.0
+
+[node name="WorldGenerator" parent="." unique_id=1488763482 instance=ExtResource("2_fj7yv")]
