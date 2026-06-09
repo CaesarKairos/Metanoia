@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bqo4723o4p0ts"]
+
+[ext_resource type="Texture2D" uid="uid://dfmqoxs78xtly" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_01.png" id="1_7rikv"]
+[ext_resource type="Texture2D" uid="uid://bl5c4bp61185e" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_02.png" id="2_8bg48"]
+[ext_resource type="Texture2D" uid="uid://b0gga78eowr8s" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_03.png" id="3_7b0bt"]
+[ext_resource type="Texture2D" uid="uid://dhvektctcl3t0" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_04.png" id="4_k1x0f"]
+[ext_resource type="Texture2D" uid="uid://457168ou2mrw" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_05.png" id="5_sl1gy"]
+[ext_resource type="Texture2D" uid="uid://dhr67qmqr00ch" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_06.png" id="6_nhh44"]
+[ext_resource type="Texture2D" uid="uid://cwcxkkruktkvv" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_07.png" id="7_4lqax"]
+[ext_resource type="Texture2D" uid="uid://bn0hg4xrnixlx" path="res://assets/sprites/environment/EnvironmentPack/Moon/Moon_08.png" id="8_a60ov"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ni4qt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7rikv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8bg48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7b0bt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k1x0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sl1gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nhh44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4lqax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a60ov")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BackgroundParallax" type="Node" unique_id=1631447441]
+
+[node name="CeuBase" type="CanvasLayer" parent="." unique_id=945798437]
+layer = -100
+
+[node name="ColorRect" type="ColorRect" parent="CeuBase" unique_id=669525883]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7019608, 0.7254902, 0.81960785, 1)
+
+[node name="Lua" type="Parallax2D" parent="." unique_id=1268691343]
+z_index = -10
+scroll_scale = Vector2(0, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Lua" unique_id=1045045953]
+position = Vector2(205, 168)
+sprite_frames = SubResource("SpriteFrames_ni4qt")
+autoplay = "default"
+frame_progress = 0.22813341

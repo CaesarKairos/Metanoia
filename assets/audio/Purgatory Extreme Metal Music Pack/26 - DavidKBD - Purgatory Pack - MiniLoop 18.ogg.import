@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdfg8vdqi6mmh"
+path="res://.godot/imported/26 - DavidKBD - Purgatory Pack - MiniLoop 18.ogg-d5684cf06f351eda5ce842c7e49e52e8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Purgatory Extreme Metal Music Pack/26 - DavidKBD - Purgatory Pack - MiniLoop 18.ogg"
+dest_files=["res://.godot/imported/26 - DavidKBD - Purgatory Pack - MiniLoop 18.ogg-d5684cf06f351eda5ce842c7e49e52e8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

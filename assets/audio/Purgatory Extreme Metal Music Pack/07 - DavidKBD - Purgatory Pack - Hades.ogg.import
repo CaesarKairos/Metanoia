@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmis84s3eukca"
+path="res://.godot/imported/07 - DavidKBD - Purgatory Pack - Hades.ogg-06451a4f06ed1719f63614c3e70b1b2f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Purgatory Extreme Metal Music Pack/07 - DavidKBD - Purgatory Pack - Hades.ogg"
+dest_files=["res://.godot/imported/07 - DavidKBD - Purgatory Pack - Hades.ogg-06451a4f06ed1719f63614c3e70b1b2f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

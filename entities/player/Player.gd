@@ -16,7 +16,14 @@ func _ready():
 	# FORÇA O MOTOR A IGNORAR DEGRAUS PEQUENOS:
 	floor_snap_length = 8.0
 	floor_constant_speed = true
-	floor_max_angle = deg_to_rad(46.0) # Permite subir inclinações e quinas leves automaticamente
+	floor_max_angle = deg_to_rad(46.0)
+	
+	# SOLUÇÃO DA CÂMERA: Procura se existe uma câmera anexada ao player e ativa o filtro físico
+	for child in get_children():
+		if child is Camera2D:
+			child.process_callback = Camera2D.CAMERA2D_PROCESS_PHYSICS
+			child.position_smoothing_enabled = true
+			child.position_smoothing_speed = 8.0 # Ajuste o valor para o quão firme você desejaddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 func _physics_process(delta):
 	# 1. Aplica a gravidade

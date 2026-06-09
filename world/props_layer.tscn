@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cy1b8x7ve5f5y"]
+
+[ext_resource type="Texture2D" uid="uid://67erqhevvma6" path="res://assets/sprites/environment/EnvironmentPack/Props/Church.png" id="1_wim8r"]
+[ext_resource type="Texture2D" uid="uid://c07od4k4xv07" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave01.png" id="2_pu7bl"]
+[ext_resource type="Texture2D" uid="uid://brebgrhwjse3y" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave02.png" id="3_k6ety"]
+[ext_resource type="Texture2D" uid="uid://d4kclblepaoux" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave03.png" id="4_mm10k"]
+[ext_resource type="Texture2D" uid="uid://uryoqpcwrgbu" path="res://assets/sprites/environment/EnvironmentPack/Props/Ladder.png" id="5_g5fgr"]
+[ext_resource type="Texture2D" uid="uid://dtmwy2o2ascf7" path="res://assets/sprites/environment/EnvironmentPack/Props/Mist.png" id="6_lg57l"]
+[ext_resource type="Texture2D" uid="uid://d1r8ifk8p4tnw" path="res://assets/sprites/environment/EnvironmentPack/Props/Tree.png" id="7_grq1t"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f8rl8"]
+texture = ExtResource("1_wim8r")
+texture_region_size = Vector2i(70, 167)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bcvif"]
+texture = ExtResource("2_pu7bl")
+texture_region_size = Vector2i(75, 27)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0smt"]
+texture = ExtResource("3_k6ety")
+texture_region_size = Vector2i(27, 37)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4v4dw"]
+texture = ExtResource("4_mm10k")
+texture_region_size = Vector2i(52, 80)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2rb8"]
+texture = ExtResource("5_g5fgr")
+texture_region_size = Vector2i(23, 124)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qh36v"]
+texture = ExtResource("6_lg57l")
+texture_region_size = Vector2i(480, 35)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qnf0"]
+texture = ExtResource("7_grq1t")
+texture_region_size = Vector2i(128, 116)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bcvif"]
+sources/1 = SubResource("TileSetAtlasSource_f8rl8")
+sources/2 = SubResource("TileSetAtlasSource_bcvif")
+sources/3 = SubResource("TileSetAtlasSource_u0smt")
+sources/4 = SubResource("TileSetAtlasSource_4v4dw")
+sources/5 = SubResource("TileSetAtlasSource_j2rb8")
+sources/6 = SubResource("TileSetAtlasSource_qh36v")
+sources/7 = SubResource("TileSetAtlasSource_1qnf0")
+
+[node name="PropsLayer" type="TileMapLayer" unique_id=1838698155]
+tile_set = SubResource("TileSet_bcvif")

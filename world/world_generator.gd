@@ -9,12 +9,15 @@ extends Node2D
 
 @export_group("Alvos e Tela")
 @export var player_path: NodePath            
-@export var chunks_on_screen: int = 3
 
 var player: CharacterBody2D
 var chunk_width: float
 var spawned_chunks: Array = []
 var next_spawn_x: float = 0.0
+
+# Regra de Janela: Controla quantos chunks devem existir no total para manter o passado e o futuro vivos
+# Mantemos: 1 (atrás) + 1 (onde o player está) + 2 (frente seguros) = 4 ativos no array
+var max_chunks_ativos: int = 4
 
 func _ready():
 	chunk_width = chunk_size_tiles * tile_size_pixels
@@ -37,15 +40,15 @@ func _ready():
 	if spawn_chunk_scene:
 		spawn_specific_chunk(spawn_chunk_scene)
 	
-	# 2. Preenche o restante dos blocos iniciais da tela com os chunks aleatórios
-	var remaining_chunks = chunks_on_screen - 1 if spawn_chunk_scene else chunks_on_screen
-	for i in range(remaining_chunks):
+	# 2. Já inicializa gerando 3 chunks para a frente para cobrir o horizonte inicial
+	for i in range(3):
 		spawn_chunk()
 
 func _process(_delta):
 	if player:
-		# Aumentamos para 3.0 para o chão ser gerado muito antes do player chegar no fim
-		if player.global_position.x > next_spawn_x - (chunk_width * 3.0):
+		# GATILHO ANTECIPADO: Geramos o próximo chunk quando o player estiver a 2.5 chunks de distância do final absoluto
+		# Isso garante que a próxima plataforma surja muito antes da câmera sequer olhar para ela
+		if player.global_position.x > next_spawn_x - (chunk_width * 2.5):
 			spawn_chunk()
 			remove_old_chunk()
 
@@ -73,7 +76,9 @@ func spawn_chunk():
 	next_spawn_x += chunk_width
 
 func remove_old_chunk():
-	if spawned_chunks.size() > chunks_on_screen + 1:
+	# LIMPEZA SELETIVA: Só deleta o chunk mais antigo se ultrapassarmos o nosso limite de segurança
+	# Exemplo: Se o player está no chunk 5, mantemos o 4 e o 3 é excluído neste momento
+	if spawned_chunks.size() > max_chunks_ativos:
 		var old_chunk = spawned_chunks.pop_front()
 		if is_instance_valid(old_chunk):
 			old_chunk.queue_free()

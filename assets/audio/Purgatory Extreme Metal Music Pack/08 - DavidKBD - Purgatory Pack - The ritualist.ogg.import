@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b04j1q7moeqnm"
+path="res://.godot/imported/08 - DavidKBD - Purgatory Pack - The ritualist.ogg-a76151c5d92adda915ac1b197cbe3de6.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Purgatory Extreme Metal Music Pack/08 - DavidKBD - Purgatory Pack - The ritualist.ogg"
+dest_files=["res://.godot/imported/08 - DavidKBD - Purgatory Pack - The ritualist.ogg-a76151c5d92adda915ac1b197cbe3de6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
