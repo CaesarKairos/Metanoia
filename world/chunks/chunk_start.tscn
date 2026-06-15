@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://c7txf4n7pywmm"]
 
-[ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/plataforms_layer.tscn" id="1_1bg5c"]
+[ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/layers/plataforms_layer.tscn" id="1_1bg5c"]
 
 [node name="ChunkStart" type="Node2D" unique_id=2059700738]
 

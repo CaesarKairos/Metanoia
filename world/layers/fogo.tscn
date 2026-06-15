@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dyucxv1q4iulq"]
+
+[ext_resource type="Texture2D" uid="uid://h4q2m05dt7g1" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_01.png" id="1_6b50d"]
+[ext_resource type="Texture2D" uid="uid://d27xqk2ahg0j5" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_02.png" id="2_ye0ey"]
+[ext_resource type="Texture2D" uid="uid://bcvdnnv355x5" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_03.png" id="3_wcvfu"]
+[ext_resource type="Texture2D" uid="uid://cfk4vmpvgf5h0" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_04.png" id="4_g17hn"]
+[ext_resource type="Texture2D" uid="uid://xhelld6hvekn" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_05.png" id="5_ih0by"]
+[ext_resource type="Texture2D" uid="uid://dlw1musan162j" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_06.png" id="6_436b0"]
+[ext_resource type="Texture2D" uid="uid://r01k25l7ihmv" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_07.png" id="7_vykhb"]
+[ext_resource type="Texture2D" uid="uid://bdv0igo16r415" path="res://assets/sprites/environment/EnvironmentPack/Fire/Fire_08.png" id="8_eoc04"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7iiby"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6b50d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ye0ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wcvfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g17hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ih0by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_436b0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vykhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eoc04")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Fogo" type="AnimatedSprite2D" unique_id=1067568823]
+sprite_frames = SubResource("SpriteFrames_7iiby")
+autoplay = "default"
+frame_progress = 0.23031372

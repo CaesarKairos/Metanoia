@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://cmxv33qiwx5yb"]
 
-[ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/plataforms_layer.tscn" id="1_ymr8b"]
+[ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/layers/plataforms_layer.tscn" id="1_ymr8b"]
 
 [node name="Chunk_02" type="Node2D" unique_id=832155521]
 

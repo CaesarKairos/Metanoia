@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1e12rhtgn7hb"]
 
-[ext_resource type="Script" uid="uid://cp5w0c82px5cv" path="res://world/world_generator.gd" id="1_0rh5h"]
+[ext_resource type="Script" uid="uid://cp5w0c82px5cv" path="res://world/scripts/world_generator.gd" id="1_0rh5h"]
 [ext_resource type="PackedScene" uid="uid://c7txf4n7pywmm" path="res://world/chunks/chunk_start.tscn" id="2_ep3qw"]
 [ext_resource type="PackedScene" uid="uid://dpqj7anknh7oi" path="res://world/chunks/chunk_01.tscn" id="3_2hr35"]
 [ext_resource type="PackedScene" uid="uid://cmxv33qiwx5yb" path="res://world/chunks/chunk_02.tscn" id="4_tttvh"]

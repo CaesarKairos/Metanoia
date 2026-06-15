@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bk8viogja7712"]
+
+[ext_resource type="Texture2D" uid="uid://dqixo27dn2qhu" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_01.png" id="1_scs8h"]
+[ext_resource type="Texture2D" uid="uid://8qev6pahs3qi" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_02.png" id="2_y3tjp"]
+[ext_resource type="Texture2D" uid="uid://di1xd53imwjbv" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_03.png" id="3_0e12s"]
+[ext_resource type="Texture2D" uid="uid://bcjlcatyn1f8x" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_04.png" id="4_k20ab"]
+[ext_resource type="Texture2D" uid="uid://du6mhyh34cifw" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_05.png" id="5_eoxkp"]
+[ext_resource type="Texture2D" uid="uid://c3f11ae17v4rl" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_06.png" id="6_i5idt"]
+[ext_resource type="Texture2D" uid="uid://cflr2krfbq65d" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_07.png" id="7_o6v0m"]
+[ext_resource type="Texture2D" uid="uid://b2uo0h0yd61o4" path="res://assets/sprites/environment/EnvironmentPack/Water/Water_08.png" id="8_sj8x0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_moi3t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_scs8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y3tjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0e12s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k20ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eoxkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i5idt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o6v0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sj8x0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Agua" type="AnimatedSprite2D" unique_id=1440346359]
+sprite_frames = SubResource("SpriteFrames_moi3t")
+autoplay = "default"
+frame_progress = 0.14223772

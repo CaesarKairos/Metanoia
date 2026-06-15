@@ -1,3 +1,36 @@
-# Godot 4+ specific ignores
+# Godot 4+ cache and internal files
 .godot/
+
+# Build and export presets
+export_presets.cfg
+
+# Local editor configuration and layouts (specific to your computer)
+*.uid
+.import/
+*.tmp
+*.log
+
+# Crash dumps and logs
+*.mdmp
+libs/
+
+# Ignora executáveis soltos
+*.exe
+*.pck
+*.console.exe
+app/*.exe
+app/*.pck
+app/*.console.exe
+
+# Ignora pastas inteiras de exportação (caso exista uma pasta build ou exports)
+build/
+exports/
+dist/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Mobile export folders
 /android/
+/ios/

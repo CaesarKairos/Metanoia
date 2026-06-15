@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://2s00uxt767gh"]
+
+[ext_resource type="PackedScene" uid="uid://bchpf1xxa248h" path="res://entities/player/Player.tscn" id="1_rf5xd"]
+[ext_resource type="PackedScene" uid="uid://c1e12rhtgn7hb" path="res://world/world_generator.tscn" id="2_jvmqm"]
+[ext_resource type="PackedScene" uid="uid://bqo4723o4p0ts" path="res://world/scenes/background_parallax.tscn" id="3_65od5"]
+
+[node name="world" type="Node2D" unique_id=1625716084]
+
+[node name="Player" parent="." unique_id=999658134 instance=ExtResource("1_rf5xd")]
+position = Vector2(150, -150)
+
+[node name="WorldGenerator" parent="." unique_id=1488763482 instance=ExtResource("2_jvmqm")]
+
+[node name="BackgroundParallax" parent="." unique_id=1631447441 instance=ExtResource("3_65od5")]
