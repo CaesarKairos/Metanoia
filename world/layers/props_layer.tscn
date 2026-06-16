@@ -66,5 +66,4 @@ sources/9 = SubResource("TileSetScenesCollectionSource_lg57l")
 
 [node name="PropsLayer" type="TileMapLayer" unique_id=1838698155]
 z_index = -1
-scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_bcvif")

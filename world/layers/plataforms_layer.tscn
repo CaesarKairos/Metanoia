@@ -71,5 +71,4 @@ sources/5 = SubResource("TileSetAtlasSource_uuaxm")
 sources/6 = SubResource("TileSetAtlasSource_dn2dg")
 
 [node name="PlataformsLayer" type="TileMapLayer" unique_id=1805241719]
-scale = Vector2(1.5, 1.5)
 tile_set = SubResource("TileSet_bik5n")

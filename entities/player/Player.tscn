@@ -385,6 +385,7 @@ animations = [{
 height = 78.0
 
 [node name="Player" type="CharacterBody2D" unique_id=999658134]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_op7ga")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1829177557]
