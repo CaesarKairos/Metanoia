@@ -2,8 +2,71 @@
 
 [ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/layers/plataforms_layer.tscn" id="1_xtjbe"]
 [ext_resource type="PackedScene" uid="uid://cy1b8x7ve5f5y" path="res://world/layers/props_layer.tscn" id="2_sx3e3"]
-[ext_resource type="PackedScene" uid="uid://c7hqpm5qioyc" path="res://world/layers/silhouette_layer.tscn" id="3_xtpte"]
-[ext_resource type="PackedScene" uid="uid://cv7hvrhxi4cah" path="res://world/layers/bigprops_layer.tscn" id="4_fd3aj"]
+[ext_resource type="PackedScene" uid="uid://c7hqpm5qioyc" path="res://world/layers/big_silhouette_layer.tscn" id="3_xtpte"]
+[ext_resource type="Texture2D" uid="uid://67erqhevvma6" path="res://assets/sprites/environment/EnvironmentPack/Props/Church.png" id="4_8v3ci"]
+[ext_resource type="PackedScene" uid="uid://cv7hvrhxi4cah" path="res://world/layers/big_props_layer.tscn" id="4_fd3aj"]
+[ext_resource type="Texture2D" uid="uid://c07od4k4xv07" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave01.png" id="5_e0pow"]
+[ext_resource type="Texture2D" uid="uid://brebgrhwjse3y" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave02.png" id="6_hij4f"]
+[ext_resource type="Texture2D" uid="uid://d4kclblepaoux" path="res://assets/sprites/environment/EnvironmentPack/Props/Grave03.png" id="7_ndaax"]
+[ext_resource type="Texture2D" uid="uid://uryoqpcwrgbu" path="res://assets/sprites/environment/EnvironmentPack/Props/Ladder.png" id="8_bqks2"]
+[ext_resource type="Texture2D" uid="uid://dtmwy2o2ascf7" path="res://assets/sprites/environment/EnvironmentPack/Props/Mist.png" id="9_tnqg4"]
+[ext_resource type="Texture2D" uid="uid://d1r8ifk8p4tnw" path="res://assets/sprites/environment/EnvironmentPack/Props/Tree.png" id="10_00gnk"]
+[ext_resource type="PackedScene" uid="uid://bk8viogja7712" path="res://world/layers/agua.tscn" id="11_xsanj"]
+[ext_resource type="PackedScene" uid="uid://dyucxv1q4iulq" path="res://world/layers/fogo.tscn" id="12_w2pvn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f8rl8"]
+texture = ExtResource("4_8v3ci")
+texture_region_size = Vector2i(70, 167)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bcvif"]
+texture = ExtResource("5_e0pow")
+texture_region_size = Vector2i(75, 27)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0smt"]
+texture = ExtResource("6_hij4f")
+texture_region_size = Vector2i(27, 37)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4v4dw"]
+texture = ExtResource("7_ndaax")
+texture_region_size = Vector2i(52, 80)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2rb8"]
+texture = ExtResource("8_bqks2")
+texture_region_size = Vector2i(23, 124)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qh36v"]
+texture = ExtResource("9_tnqg4")
+texture_region_size = Vector2i(480, 35)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qnf0"]
+texture = ExtResource("10_00gnk")
+texture_region_size = Vector2i(128, 116)
+0:0/0 = 0
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_g5fgr"]
+resource_name = "Agua"
+scenes/1/scene = ExtResource("11_xsanj")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_lg57l"]
+resource_name = "Fogo"
+scenes/1/scene = ExtResource("12_w2pvn")
+
+[sub_resource type="TileSet" id="TileSet_bcvif"]
+sources/1 = SubResource("TileSetAtlasSource_f8rl8")
+sources/2 = SubResource("TileSetAtlasSource_bcvif")
+sources/3 = SubResource("TileSetAtlasSource_u0smt")
+sources/4 = SubResource("TileSetAtlasSource_4v4dw")
+sources/5 = SubResource("TileSetAtlasSource_j2rb8")
+sources/6 = SubResource("TileSetAtlasSource_qh36v")
+sources/7 = SubResource("TileSetAtlasSource_1qnf0")
+sources/8 = SubResource("TileSetScenesCollectionSource_g5fgr")
+sources/9 = SubResource("TileSetScenesCollectionSource_lg57l")
 
 [node name="ChunkStart" type="Node2D" unique_id=1416058332]
 
@@ -49,24 +112,9 @@ offset_right = 1155.0
 offset_bottom = 756.24
 color = Color(0.54509807, 0.5764706, 0.6862745, 1)
 
-[node name="SilhouetteLayer" parent="." unique_id=662539046 instance=ExtResource("3_xtpte")]
-tile_map_data = PackedByteArray("AAD5////AAAAAAAAAADv/wEAAgAAAAAAAADk/wAAAAAAAAAAAAAIAAMAAgAAAAAAAAA=")
-
-[node name="Filling" type="ColorRect" parent="SilhouetteLayer" unique_id=987113881]
-z_index = -1
-offset_left = -550.0
-offset_top = 18.0
-offset_right = 1.666687
-offset_bottom = 127.66667
-color = Color(0.2, 0.22352941, 0.25490198, 1)
-
-[node name="Filling2" type="ColorRect" parent="SilhouetteLayer" unique_id=422662320]
-z_index = -1
-offset_left = 100.66667
-offset_top = 65.33333
-offset_right = 143.66667
-offset_bottom = 256.0
-color = Color(0.2, 0.22352941, 0.25490198, 1)
-
 [node name="BigPropsLayer" parent="." unique_id=474939773 instance=ExtResource("4_fd3aj")]
 tile_map_data = PackedByteArray("AAAAAP3/BwAAAAAAAAD0//7/BAAAAAAAAAA=")
+tile_set = SubResource("TileSet_bcvif")
+
+[node name="BigSilhouetteLayer" parent="." unique_id=662539046 instance=ExtResource("3_xtpte")]
+tile_map_data = PackedByteArray("AAD5////AAAAAAAAAADr////AAAAAAAAAADg/wAAAgAAAAAAAAA=")

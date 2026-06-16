@@ -1,0 +1,76 @@
+[gd_scene format=4 uid="uid://beknuai6hkc36"]
+
+[ext_resource type="PackedScene" uid="uid://cdhojso0ltys6" path="res://world/layers/plataforms_layer.tscn" id="1_oesu6"]
+[ext_resource type="PackedScene" uid="uid://cy1b8x7ve5f5y" path="res://world/layers/props_layer.tscn" id="2_mxwue"]
+[ext_resource type="PackedScene" uid="uid://dho0ovxp4hh3a" path="res://world/layers/silhouette_layer.tscn" id="3_0faij"]
+[ext_resource type="PackedScene" uid="uid://cv7hvrhxi4cah" path="res://world/layers/big_props_layer.tscn" id="4_7y285"]
+[ext_resource type="PackedScene" uid="uid://c7hqpm5qioyc" path="res://world/layers/big_silhouette_layer.tscn" id="5_mxwue"]
+
+[node name="chunk_01" type="Node2D" unique_id=472908483]
+
+[node name="PlataformsLayer" parent="." unique_id=1805241719 instance=ExtResource("1_oesu6")]
+tile_map_data = PackedByteArray("AAADAAAAAwAAAAAAAAAFAAAABQAAAAAAAAADAAQABAAAAAAAAAAFAAQABgAAAAAAAAAOAAAAAwAAAAAAAAAQAAAABQAAAAAAAAAgAAAAAwAAAAAAAAAiAAAABQAAAAAAAAAsAAAABQAAAAAAAAAqAAAAAwAAAAAAAABLAAAABQAAAAAAAABJAAAAAwAAAAAAAAA9AAAAAwAAAAAAAABAAAAAAQAAAAAAAABDAAAABQAAAAAAAABDAAQABgAAAAAAAAA9AAQABAAAAAAAAABAAAQAAgAAAAAAAAAxAP//AwAAAAAAAAA0AP//AQAAAAAAAAA3AP//BQAAAAAAAAA0AAMAAgAAAAAAAAAxAAMABAAAAAAAAAA3AAMABgAAAAAAAAAsAAQABgAAAAAAAAAqAAQABAAAAAAAAAAgAAQABAAAAAAAAAAiAAQABgAAAAAAAAAQAAQABgAAAAAAAAAOAAQABAAAAAAAAABJAAQABAAAAAAAAABLAAQABgAAAAAAAAAbAAIABQAAAAAAAAAZAAIAAwAAAAAAAAAZAAYABAAAAAAAAAAbAAYABgAAAAAAAAA=")
+
+[node name="Filing" type="ColorRect" parent="PlataformsLayer" unique_id=772066297]
+offset_left = 37.0
+offset_top = 113.0
+offset_right = 107.0
+offset_bottom = 713.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing2" type="ColorRect" parent="PlataformsLayer" unique_id=1256208327]
+offset_left = 213.0
+offset_top = 110.0
+offset_right = 283.0
+offset_bottom = 710.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing3" type="ColorRect" parent="PlataformsLayer" unique_id=866189646]
+offset_left = 389.0
+offset_top = 105.0
+offset_right = 459.0
+offset_bottom = 705.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing4" type="ColorRect" parent="PlataformsLayer" unique_id=936155742]
+offset_left = 501.0
+offset_top = 109.0
+offset_right = 571.0
+offset_bottom = 709.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing5" type="ColorRect" parent="PlataformsLayer" unique_id=272616560]
+offset_left = 661.0
+offset_top = 113.0
+offset_right = 731.0
+offset_bottom = 713.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing6" type="ColorRect" parent="PlataformsLayer" unique_id=912923882]
+offset_left = 773.0
+offset_top = 101.0
+offset_right = 906.0
+offset_bottom = 703.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing7" type="ColorRect" parent="PlataformsLayer" unique_id=523838299]
+offset_left = 966.0
+offset_top = 111.0
+offset_right = 1099.0
+offset_bottom = 713.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="Filing8" type="ColorRect" parent="PlataformsLayer" unique_id=1657023669]
+offset_left = 1157.0
+offset_top = 114.0
+offset_right = 1227.0
+offset_bottom = 714.0
+color = Color(0.2901961, 0.32941177, 0.38431373, 1)
+
+[node name="PropsLayer" parent="." unique_id=1838698155 instance=ExtResource("2_mxwue")]
+
+[node name="SilhouetteLayer" parent="." unique_id=662539046 instance=ExtResource("3_0faij")]
+
+[node name="BigPropsLayer" parent="." unique_id=328764813 instance=ExtResource("4_7y285")]
+
+[node name="BigSilhouetteLayer" parent="." unique_id=1925771925 instance=ExtResource("5_mxwue")]

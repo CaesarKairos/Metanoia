@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dho0ovxp4hh3a"]
+[gd_scene format=3 uid="uid://c7hqpm5qioyc"]
 
 [ext_resource type="Texture2D" uid="uid://ca44eai1rb6ur" path="res://assets/sprites/environment/EnvironmentPack/Props/BackGround01.png" id="1_2jdhl"]
 [ext_resource type="Texture2D" uid="uid://bbwk7qaknjgb" path="res://assets/sprites/environment/EnvironmentPack/Props/BackGround02.png" id="2_8tx03"]
@@ -17,6 +17,7 @@ texture_region_size = Vector2i(127, 46)
 sources/0 = SubResource("TileSetAtlasSource_i0heo")
 sources/2 = SubResource("TileSetAtlasSource_8tx03")
 
-[node name="SilhouetteLayer" type="TileMapLayer" unique_id=662539046]
+[node name="BigSilhouetteLayer" type="TileMapLayer" unique_id=662539046]
 z_index = -3
+scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_6wsx5")

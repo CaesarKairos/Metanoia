@@ -382,7 +382,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f2vir"]
-height = 78.0
+height = 74.999985
 
 [node name="Player" type="CharacterBody2D" unique_id=999658134]
 scale = Vector2(0.8, 0.8)
