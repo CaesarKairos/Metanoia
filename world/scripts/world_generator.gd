@@ -51,6 +51,11 @@ func _process(_delta):
 		if player.global_position.x > next_spawn_x - (chunk_width * 2.5):
 			spawn_chunk()
 			remove_old_chunk()
+			
+	# Se o jogador apertar a tecla R...
+	if Input.is_action_just_pressed("resetar_jogo"):
+		# call_deferred agenda o reload de forma limpa e evita erros com a física
+		get_tree().call_deferred("reload_current_scene")
 
 # Função para instanciar o chunk inicial respeitando a altura (Y) do gerador
 func spawn_specific_chunk(scene: PackedScene):
