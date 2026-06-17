@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cp5w0c82px5cv" path="res://world/scripts/world_generator.gd" id="1_0rh5h"]
 [ext_resource type="PackedScene" uid="uid://di71uy68w0knp" path="res://world/chunks/chunk_start.tscn" id="2_ep3qw"]
-[ext_resource type="PackedScene" uid="uid://beknuai6hkc36" path="res://chunk_01.tscn" id="3_nyueh"]
+[ext_resource type="PackedScene" uid="uid://beknuai6hkc36" path="res://world/chunks/chunk_01.tscn" id="3_nyueh"]
 
 [node name="WorldGenerator" type="Node2D" unique_id=1488763482]
 script = ExtResource("1_0rh5h")
