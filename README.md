@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-orange?style=flat-square" alt="Status">
   <img src="https://img.shields.io/badge/Engine-Godot-blue?style=flat-square&logo=godot-engine&logoColor=white" alt="Godot">
+  <img src="https://img.shields.io/badge/Estilo-Pixel_Art-blueviolet?style=flat-square" alt="Pixel Art">
 </p>
 
 ## 📋 Sobre o Projeto
